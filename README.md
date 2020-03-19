@@ -1,7 +1,7 @@
 # Retuarant website
 [![LOGO|Django](https://github.com/engragy/django_restaurant_app-/blob/master/Django-Framework-Logo.png)]()
 *** Powered By ***
-##### Great implmentation of a Store with ordering web app.
+##### Great implementation of a Store with ordering web app.
 ### consists of a couple of pages!
 > Main page with pictures of menu items, and odering form on the left.
 > ![main_page](https://github.com/engragy/django_restaurant_app-/blob/master/main-page.png)
