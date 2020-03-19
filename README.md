@@ -1,12 +1,12 @@
 # Retuarant website
-[![LOGO|Django](https://codecondo.com/wp-content/uploads/2014/02/Django-Framework-Logo.png)]()
+[![LOGO|Django](https://github.com/engragy/django_restaurant_app-/blob/master/Django-Framework-Logo.png)]()
 *** Powered By ***
 ##### Great implmentation of a Store with ordering web app.
 ### consists of a couple of pages!
 > Main page with pictures of menu items, and odering form on the left.
-> ![main_page](https://codecondo.com/wp-content/uploads/2014/02/Django-Framework-Logo.png)
+> ![main_page](https://github.com/engragy/django_restaurant_app-/blob/master/main-page.png)
 > Order summary with Total amount, before placing the order.
-> ![register_page](https://codecondo.com/wp-content/uploads/2014/02/Django-Framework-Logo.png)
+> ![register_page](https://github.com/engragy/django_restaurant_app-/blob/master/order-summary.png)
 
 ### Features:
 * Elegant restaurant website with nice Custom CSS effects (no styling framework is used)
