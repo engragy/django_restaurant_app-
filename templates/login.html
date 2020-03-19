@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+{% endblock %}
+
+{% block title %}
+    pinocchio_LOG-IN
+{% endblock %}
+
+{% block body %}
+<div class="col-md-6-center">
+  <form action="" method="POST" class="form-control-lg">
+      <!-- CSRF security token -->
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend>Sign IN</legend>
+            {% for error in form.non_field_errors %}
+                <div class="invalid-feedback">
+                    {{ error }}
+                </div>
+            {% endfor %}
+            
+            {% for field in form.visible_fields %}
+                <div>
+                    <!-- display input field label -->
+                    {{ field|add_label_class:"field-label" }}
+                    <!-- display input field or invalid input errors -->
+                    {% if field.errors %}
+                    {{ field|add_error_class:"field-text is-invalid" }}
+                        <div class="invalid-feedback">
+                            {% for error in field.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ field|add_class:"field-text" }}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </fieldset>
+        <div>
+            <button type="submit" class="btn-main-lg bg-color-blue">LOG-IN</button>
+        </div>
+    </form>
+    <div class="wrong-form">
+        register if you don't have an Account ! <a href="{% url 'register' %}">Sign UP</a>
+    </div>    
+</div>
+{% endblock %}
